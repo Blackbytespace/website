@@ -25,6 +25,6 @@ export default {
   },
   og: {
     imageUrl:
-      'https://raw.githubusercontent.com/Blackbytespace/sugarcss/refs/heads/main/assets/blackbyte-sugarcss-og.png',
+      'https://raw.githubusercontent.com/Blackbytespace/website/refs/heads/main/assets/blackbyte-og.png',
   },
 } as TWebsiteConfig;
