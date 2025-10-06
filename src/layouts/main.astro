@@ -1,0 +1,22 @@
+---
+interface Props {
+  pageTitle: string;
+}
+
+import { MainLayout, type TWebsiteConfig } from '@blackbyte/website-common';
+import '../components/index.css';
+import websiteConfig from '../../website.config';
+---
+
+<script>
+  import '../components/index';
+</script>
+
+<MainLayout
+  pageTitle={Astro.props.pageTitle}
+  header={false}
+  footer={false}
+  websiteConfig={websiteConfig}
+>
+  <slot />
+</MainLayout>

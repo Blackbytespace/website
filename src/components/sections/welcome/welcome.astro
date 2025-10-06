@@ -1,0 +1,28 @@
+---
+import { BlackbyteLogoSvg } from '@blackbyte/website-common';
+import './welcome.css';
+---
+
+<section class="welcome">
+  <h1 class="welcome_logo">
+    <Fragment set:html={BlackbyteLogoSvg} />
+  </h1>
+  <p class="welcome_lead">
+    We are dedicated to create high quality tools and utilities to make your
+    daily developer life better
+  </p>
+  <div class="welcome_sugarcss">
+    <a href="https://sugarcss.blackbyte.space" title="Blackbyte SugarCss">
+      SugarCSS</a
+    >
+  </div>
+  <div class="welcome_sugar">
+    <a href="https://sugar.blackbyte.space" title="Blackbyte Sugar"> Sugar</a>
+  </div>
+  <div class="welcome_links">
+    <a class="header_license" href="" title="Blackbyte MIT license"> MIT </a>
+    <a href="" title="Blackbyte on Github">
+      <s-icon name="github" provider="pixelarticons" type="brands"></s-icon>
+    </a>
+  </div>
+</section>

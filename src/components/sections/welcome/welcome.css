@@ -1,0 +1,66 @@
+.welcome {
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  .welcome_logo {
+    svg {
+      width: 200px;
+
+      [fill] {
+        fill: currentColor;
+      }
+    }
+  }
+
+  .welcome_lead {
+    width: 300px;
+    @s-typo (p);
+    text-align: center;
+    opacity: 0.8;
+  }
+
+  .welcome_sugar,
+  .welcome_sugarcss {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 150px;
+      padding: 10px 20px;
+      border-radius: 9999px;
+      color: white;
+    }
+  }
+
+  .welcome_sugarcss {
+    a {
+      border: 2px solid #f4ad20;
+    }
+  }
+
+  .welcome_sugar {
+    a {
+      border: 2px solid #8854f7;
+    }
+  }
+
+  .welcome_links {
+    display: flex;
+    gap: 10px;
+
+    a {
+      opacity: 0.5;
+      @s-transition (fast);
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+    }
+  }
+}
